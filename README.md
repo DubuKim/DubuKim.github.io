@@ -54,9 +54,9 @@ hydra theme를 적용한 뒤, blog의 기본 정보를 수정하려고 하였으
 
 결국 hydra theme 대신 강사님이 사용하신 Lanyon 테마를 github에서 zip으로 다운받은 뒤, 적용을 시키고 PUSH를 했다.
 
-하지만 깜빡하고 미리 serve로 확인을 하지 않았기에, hydra theme가 여전히 적용이 되어있었다.
+하지만 PUSH를 하기 전, jekyll serve로 미리 local 환경에서 테스트를 하는 것을 깜빡했고, github의 page에서 hydra theme가 여전히 적용이 되어있는 것을 확인하였다.
 
-git에는 이미 섞여있는 theme가 적용 되어있었기에 remote 저장소를 덮어씌우는 방법을 택하였다.
+결국 git에는 이미 섞여있는 theme가 적용 되어있었기에 remote 저장소를 덮어씌우는 방법을 택하였다.
 
 
 ``` 
@@ -80,7 +80,7 @@ git push --force --set-upstream origin main
 
 이후 내 블로그로 사용하기 위해 기존 data를 수정했다.
 
-- Blog에 내 정보를 넣기 위해 _config.yml을 편집했따..
+- Blog에 내 정보를 넣기 위해 _config.yml을 편집했다.
 - sidebar에 있는 page를 정리하기 위해 sidebar.html에 home 태그를 제외하곤 주석처리를 했다.
 - sidebar가 page의 시작할 때 떠있기 위해, input tag의 마지막에 checked를 추가했다.
 ```

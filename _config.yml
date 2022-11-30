@@ -15,10 +15,15 @@ author:
 # Gems
 plugins:
   - jekyll-paginate
+  - jekyll-admin
 
 # Custom vars
 version:             1.1.0
 google_analytics_id: #UA-XXXX-Y
+
+jekyll_admin:
+  hidden_links:
+  homepage: ""
 
 # Comment
 comment:
